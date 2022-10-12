@@ -14,10 +14,12 @@ body{
     color: floralwhite;
 }
 .pdiv{
-    background-color: darkslategray;
-    height:30%;
+    height:40%;
     display: flex;
     justify-content: center;
+    backdrop-filter: blur(20px);
+    margin-left: 1em;
+    margin-right: 1em;
 }
 p{
     font-size: 55%;
@@ -30,28 +32,27 @@ a{
     transition: all .2s ease-in-out; 
 
 }
+.pAnchor:hover{
+    color: grey;
+}
 .gridboxNav{
     display: grid;
     grid-template-columns:repeat(3, 1fr) ;
     justify-content: center;
     padding: 5%;
-    grid-gap: 3%;
+    grid-gap: 10%;
 
     
 }
 .grid-itemNav {
-    background-color: darkslategray;
     padding: 20px;
     font-size: 75%;
     text-align: center;
-    backdrop-filter: blur(20px);
     transition: all .2s ease-in-out; 
   }
 .grid-itemNav:hover{
     transform: scale(110%);
+}
 
-}
-a:hover {
-    color: grey;
-    transform: scale(110%);    
-}
+
+
