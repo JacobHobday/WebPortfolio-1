@@ -1,0 +1,141 @@
+/*Default Layout - Mobile first approach*/ 
+body {
+    color: #ffffff;
+    background-color: #242943;
+    text-align: center;
+    font-family: "sans-serif", Serif, Georgia;
+    line-height: 1rem;
+}
+h1 {
+    line-height: 2rem;
+}
+nav {
+    display: block;
+    margin: 0;
+    padding: 0rem 3rem 3rem 3rem;
+    font-family: 'Strait', sans-serif;
+    line-height: 1.5rem;
+}
+
+    nav a {
+        display: block;
+    }
+
+img {
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+    padding-top: 0.5rem;
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: grey;
+    }
+table {
+    display: none;
+}
+footer {
+    padding: 1rem;
+}
+fieldset {
+    display: inline;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+form {
+    display: inline-block;
+}
+
+dd {
+    padding-right: 2.5rem;
+}
+
+.header {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 200%;
+    grid-column: 1 / 3;
+}
+.spaced {
+    letter-spacing: 0.3rem;
+    font-size: 125%;
+}
+.lesspaced {
+    letter-spacing: 0.2rem;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 0.8rem;
+}
+.articles {
+    background-color: #1b1f32;
+    padding: 5%
+}
+    .articles p {
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .articles header p {
+        text-align: center;
+    }
+    .articles footer p {
+    text-align: center;
+    }
+    .articles li {
+        padding-right: 1rem;
+    }
+.mediarticle {
+    background-image: url(/WebPortfolio-1-main/assets/images/stripe.png);
+}
+dl div {
+    padding-bottom: 1rem;
+}
+form {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+form input.field{
+    background-color: rgb(169,169,169)
+}
+/*Amendment to width value after deadline due to the iframe not fitting within the div*/
+iframe {
+    width: 99%;
+    height: 50rem;
+}
+img.posts {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+img.floatexample {
+   float: right;
+   padding-right: 2rem;
+}
+footer.clearexample {
+    clear: both;
+}
+
+/*Tablet Layout (Landscape) & Desktop Layout*/
+@media (min-width: 48em) {
+table {
+    padding: 1rem 1rem 0.1rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 0.8rem;
+}
+}
+
