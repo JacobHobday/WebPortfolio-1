@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+  <html lang="en" class="page">
+    <head>
+        <meta charset="UTF-8"/> 
+        <meta name="Frontend" content="width=device-width, initial-scale=1"/>
+        <title> Frontend Tutorial</title>
+        <link href="http://fonts.googleapis.com/css?family=Strait" rel="stylesheet">	    
+        <link rel="shortcut icon" href="assets/images/favicon.png"/>
+        <link rel="stylesheet" href="/WebPortfolio-1-main/assets/css/frontend.css"/>
+    </head>
+    <body>
+        <header>
+          <nav class="spaced">
+            <a href="index.html">Home</a>
+          </nav>
+        </header>
+        <main id="main">
+        <h2>Posts</h2>
+        <div class="wrapper">
+            <div class="articles">
+                <article>
+                    <header>
+                        <h3>Refactoring</h3>
+                        <p>
+                            Refining design/layout of site.
+                        </p>
+                    </header>
+                    <ul>
+                        <li>- Proof read content </li>
+                        <li>- Check markup indentation & readability</li>
+                        <li>- Refactor CSS & remove redundant code</li>
+                    </ul>
+                    <p>
+                        To begin with I started proof reading each article as reading each article via the page source can
+                        effect the readability severly.
+                        <br />A way in which I made the proof reading and alterations easier was by utilising the live server
+                        function within Visual Studio.
+                        <br />This uses your local loopback address which allows your system to send a message to itself or in
+                        this case, host a webserver to itself.
+                    </p>
+                    <img class="posts" src="assets/images/local.jpg"
+                        alt="screenshot of loopback server being viewed in browser">
+                    <p>
+                        After correcting any grammatical errors I moved onto indenting my HTML to make it readable and
+                        refactoring my CSS.
+                        <br />Due to my media queries I had around 300 lines of redundant code which I have now removed.
+                        <br />My refactored main.css is now only 129 lines, below is a preview of some of the code.
+                    </p>
+                    <img class="posts" src="assets/images/refactor.jpg" alt="screenshot of refactored code">
+                    <footer>
+                        <p>Published on <time datetime="2020-01-09">January 09, 2020</time></p>
+                    </footer>
+                </article>
+            </div>
+            <div class="articles">
+                <article>
+                    <header>
+                        <h3>Submission Form</h3>
+                        <p>
+                            Creating a contact page with user input fields.
+                        </p>
+                    </header>
+                    <ul>
+                        <li>- Setup contact page</li>
+                        <li>- Insert form</li>
+                        <li>- Add form input fields and labels.</li>
+                        <li>- Create submit button</li>
+                        <li>- Email Links</li>
+                        <li>- Test form validation</li>
+                        <li>- Improve look of form</li>
+                    </ul>
+                    <p>
+                        Firstly I opened the contact page and copied over the structure of the previously created pages to
+                        maintain consistency.
+                        <br />I then inserted a form with a method of "post", this relates to the HTTP verb POST, (Mdn, 2019)
+                        have a list of verbs for reference.
+                        <br />After setting up the basic submission form I created a fieldset containing two radio buttons,
+                        allowing the user to choose whether to receive more information.
+                        <br />In order for the user to be able to submit the form I have added an input element to the end with
+                        the type variable set to "submit".
+                    </p>
+                    <img class="posts" src="/assets/images/form.jpg" alt="screenshot of markup for submission form">
+                    <p>
+                        To put my student email on the site I used the anchor tag with a "mailto" shortcut, this will open up
+                        the users native email program.
+                    </p>
+                    <img class="posts" src="assets/images/mail.jpg" alt="screenshot of link containing a 'mailto' shortcut">
+                    <p>
+                        Implementing form validation is very easy with HTML5, for the input that takes the users email address I
+                        changed the type variable to "email".
+                        <br />Testing the form validation required me to enter an invalid email address and see if the form
+                        would check for errors.
+                    </p>
+                    <img class="posts" src="assets/images/validate.jpg"
+                        alt="screenshot of form markup that validates user's email">
+                    <p>
+                        Finally to improve the look of the form I added a light grey background color to the input fields for
+                        the users name and email.
+                    </p>
+                    <img class="posts" src="assets/images/field.jpg"
+                        alt="screenshot of css that changes forms text field backgrounds">
+                    <footer>
+                        <p>Published on <time datetime="2020-01-09">January 09, 2020</time></p>
+                        <cite>Mdn. “HTTP Request Methods.” MDN Web Docs, 23 Mar. 2019,
+                            <br />developer.mozilla.org/en-US/docs/Web/HTTP/Methods. Accessed 9 Jan. 2020.</cite>
+                    </footer>
+                </article>
+            </div>
+            <div class="articles mediarticle">
+                <article>
+                    <header>
+                        <h3>Implementing Media</h3>
+                        <p>
+                            Adding responsive media.
+                        </p>
+                    </header>
+                    <ul>
+                        <li>- Making images flexible</li>
+                        <li>- Background images</li>
+                        <li>- Create a favicon</li>
+                    </ul>
+                    <p>
+                        In order to make the images within the articles flexible I have set the width property to 100%.
+                        <br />This will preserve the resolution when loaded by different media queries.
+                    </p>
+                    <img class="posts" src="assets/images/width.jpg" alt="screenshot of width property at 100%">
+                    <p>
+                        To create a simple background image I used <a
+                            href="http://www.stripegenerator.com/">http://www.stripegenerator.com/</a>.
+                        <br />I created a "mediarticle" class, took the current background colour of my article divs and set the
+                        stripes to grey.
+                    </p>
+                    <img class="posts" src="assets/images/stripegen.jpg" alt="screenshot of stripe generator site">
+                    <p>
+                        Finally I created a favicon using the site <a href="https://favicon.io/">https://favicon.io/</a>.
+                        <br />Choosing to generate the favicon from text allowed me to create a simple closing tag symbol.
+                        <br />The favicon is located on the tab for this site.
+                    </p>
+                    <img class="posts" src="assets/images/fav.jpg" alt="screenshot of favicon generator site">
+                    <footer>
+                        <p>Published on <time datetime="2020-01-07">January 07, 2020</time></p>
+                    </footer>
+                </article>
+            </div>
+            <div class="articles">
+                <article>
+                    <header>
+                        <h3>Responsive Design</h3>
+                        <p>
+                            Converting to a mobile first approach and supporting multiple devices.
+                        </p>
+                    </header>
+                    <ul>
+                        <li>- Set up the responsive grid</li>
+                        <li>- Style small screen layout - mobile first approach</li>
+                        <li>- Media queries - styles for different screen widths</li>
+                        <li>- Hiding elements</li>
+                        <li>- Testing responsive web pages</li>
+                    </ul>
+                    <p>
+                        I started by implementing the CSS Grid to my articles and keeping the rest of the site minimal.
+                        <br />A wrapper is used to initiate the grid display and define the column values.
+                    </p>
+                    <img class="posts" src="assets/images/grid.jpg" alt="screenshot showing wrapper for CSS grid">
+                    <p>
+                        This can then be combined with media queries to determine how many columns and rows the site should
+                        have.
+                        <br />While researching I found a recommendation by (Clarke, 2012) on how many media queries to setup.
+                        <br /> This is the mobile layout as I'm starting to implement the mobile first approach.
+                    </p>
+                    <img class="posts" src="assets/images/query.jpg" alt="screenshot of media query">
+                    <p>
+                        When viewing this site on a mobile the timetable will be removed due to the display value being set to
+                        none.
+                        <br /> This just prevents the site from becoming too crowded when viewed on a smaller device.
+                    </p>
+                    <img class="posts" src="assets/images/display.jpg" alt="screenshot showing code to hide elements">
+                    <p>
+                        To test whether the site works well across multiple devices I used <a
+                            href="http://mobiletest.me/">mobiletest.me.</a>
+                        <br /> This let me view the site on emulated devices.
+                    </p>
+                    <img class="posts" src="assets/images/mobile.jpg"
+                        alt="screenshot of the mobile test site viewing this website through an iphone">
+                    <footer>
+                        <p>Published on <time datetime="2020-01-07">January 07, 2020</time></p>
+                        <cite>
+                            Clarke, Andy. “This Is the New 320 and Up.” Stuffandnonsense.Co.Uk, 21 Apr. 2012,
+                            <br />stuffandnonsense.co.uk/blog/this_is_the_new_320_and_up. Accessed 6 Jan. 2020</cite>
+                    </footer>
+                </article>
+            </div>
+            <div class="articles">
+                <article>
+                    <header>
+                        <h3>Styling Text</h3>
+                        <p>
+                            Import google fonts as an external resource for fonts and wrap text.
+                        </p>
+                    </header>
+        
+                    <ul>
+                        <li>- Apply Google fonts</li>
+                        <li>- Style paragraphs</li>
+                        <li>- Float an image & wrap text around</li>
+                    </ul>
+                    <p>
+        
+                    </p>
+                    <p>Here in the head section of the site I have created a link tag that includes google fonts.
+                        <br />This will load the font family "Strait" into my HTML file via the google API.
+                    </p>
+                    <img class="posts" src="assets/images/font.jpg" alt="screenshot of a link to google's font API">
+                    <p>
+                        Here I have set the line height for text on this site and ensured that the text is centred.
+                        <br />For the article posts I have overridden this so that the text floats left as this makes them
+                        easier to read.
+                    </p>
+                    <img class="posts" src="assets/images/para.jpg" alt="screenshot of paragraph styling">
+                    <br /><img class="posts floatexample" src="assets/images/float.jpg"
+                        alt="screenshot of code that shows how to float images">
+                    <p>
+                        To float an image and wrap some text around it I referred to <cite>(W3 Schools, 2019)</cite>.
+                        <br />I initially got this wrong as I had the text before the image, which meant the text wouldn't wrap.
+                        <br /> The image on the right inherits properties from both the "posts" and "floatexample" classes.
+                        <br />This resulted in the footer also wrapping around the image.
+                        <br />To fix this I defined a footer class called "clearexample" to clear both sides of the footer.
+                        <br />In order to resolve the layout I added some padding to the "floatexample" class,
+                        this prevented the image from hitting the border of the article.
+                    </p>
+                    <footer class="clearexample">
+                        <p>Published on <time datetime="2020-01-07">January 07, 2020</time></p>
+                        <cite>
+                            W3 Schools. (2019). CSS Layout - Float and Clear. [online]
+                            <br />Available at: www.w3schools.com/css/css_float.asp. Accessed 6 Jan. 2020.</cite>
+                    </footer>
+                </article>
+            </div>
+            <div class="articles">
+                <article>
+                    <header>
+                        <h3>CSS Basics</h3>
+                        <p>
+                            Start work on the stylesheets.
+                        </p>
+                    </header>
+                    <ul>
+                        <li>- Add normalize.css and link to webpages</li>
+                        <li>- Add my own stylesheet and link to webpages</li>
+                        <li>- Style the body & other elements</li>
+                        <li>- Specify font family</li>
+                    </ul>
+                    <p>
+                        I downloaded normalize.css from <cite>(Gallagher, 2019).</cite>
+                        then linked the stylesheet in the head of each page, along with the main.css file.
+        
+                    </p>
+                    <img class="posts" src="assets/images/stylesheet.jpg" alt="meta tag to link stylesheet">
+                    <p>
+                        I referred to (W3schools.com. 2019) when looking for help with designing the site,
+                        this showed me a general way to layout the site.
+                        <br />Below is the start of the main.css file, this stylesheet is loaded after normalise has corrected
+                        the page.
+                        <br />Within the body and the nav I have defined the font family, nav will override the body font.
+                        <br />This is due to CSS specificity, this is "the set of rules applied to CSS selectors in order to
+                        determine which style is applied to an element." (Bostian, 2019).
+                    </p>
+                    <img class="posts" src="assets/images/cssBasics.jpg" alt="screenshot of style sheet code">
+                    <footer>
+                        <p>Published on <time datetime="2019-12-03">December 03, 2019</time></p>
+                        <br />
+                        <cite>Gallagher, Nicholas. (2019). Normalize.css: Make browsers render all elements more consistently.
+                            [online]
+                            <br /> Available at: <a href="https://necolas.github.io/normalize.css/">
+                                https://necolas.github.io/normalize.css</a> [Accessed 03 Dec. 2019].
+                            <br />
+                            <br />W3schools.com. (2019). How To Build a Website. [online]
+                            <br />Available at: <a
+                                href="https://www.w3schools.com/howto/howto_website.asp">https://www.w3schools.com/howto/howto_website.asp</a>
+                            [Accessed 03 Dec. 2019].
+                            <br />
+                            <br />Bostian, Emma. “CSS Specificity.” The DEV Community, dev.to, 21 Jan. 2019,
+                            <br />dev.to/emmabostian/css-specificity-1kca. Accessed 9 Jan. 2020.
+                        </cite>
+                    </footer>
+                </article>
+            </div>
+            <div class="articles">
+                <article>
+                    <header>
+                        <h3>Markup Continued</h3>
+                        <p>
+                            Refine article structre, create timetable on index and make technology logos into links.
+                        </p>
+                    </header>
+                    <ul>
+                        <li>- Defintion list</li>
+                        <li>- Quoting text</li>
+                        <li>- Make an image into a link</li>
+                        <li>- Add a table to index</li>
+                    </ul>
+                    <p>
+                        The definition lists were used to define the concepts covered in this blog, that being HTML & CSS.
+                        <br />These defintions are located in the &lt;blockquote&gt; tags and are quotes from <a
+                            href="https://www.w3schools.com">https://www.w3schools.com</a>
+                        <br />To finish off the definition list I added some images under <cite>(Creativecommons.org,
+                            2016).</cite>
+                        <br />In order to turn the images into links I embedded the image element within an anchor element.
+                    </p>
+                    <img class="posts" src="assets/images/moarmarkup.jpg" alt="screenshot of definition list">
+                    <p>
+                        Finally I added my timetable using the table element.
+                    </p>
+                    <img class="posts" src="assets/images/table.jpg" alt="screenshot of table element displaying my timetable">
+                    <footer>
+                        <p>Published on <time datetime="2019-12-02">December 02, 2019</time></p>
+                        <cite>
+                            Creativecommons.org. (2016). About The Licenses - Creative Commons. [online]
+                            <br />Available at:<a href="https://creativecommons.org/licenses/">
+                                https://creativecommons.org/licenses</a>
+                        </cite>
+                    </footer>
+                </article>
+            </div>
+            <div class="articles">
+                <article>
+                    <header>
+                        <h3>Markup</h3>
+                        <p>
+                            Setting up the structure for articles.
+                        </p>
+                    </header>
+        
+                    <ul>
+                        <li>- Create article skeleton</li>
+                        <li>- Put a list in a post</li>
+                        <li>- Add an image using the &lt;img&gt; tags</li>
+                        <li>- Add a publication date to the article posts</li>
+                        <li>- Create navigation within each page using named anchors</li>
+                    </ul>
+                    <p>
+                        Firstly I setup an article structure consisting of a header with a title, a list and a footer with the
+                        date embedded.
+                        <br />I then moved onto adding a list which was straightforward, until I ran into the problem of HTML
+                        being interpreted within this article's content when referring to the image tag.
+                        <br />To circumvent this I utilised the named characters for "&lt;" & "&gt;" that are recognised by
+                        HTML.
+                        <br /><cite>(W3.org, 2019)</cite> have a character list to reference.
+                    </p>
+                    <img class="posts" src="/assets/images/markup.jpg" alt="screenshot of article containing a list">
+                    <p>When adding an image, open an image tag and enter the path to the image file and add a descripton for
+                        screen readers to use.</p>
+                    <img class="posts" src="assets/images/img.jpg" alt="screenshot of markup for implementing an image">
+                    <p>
+                        To format the publication date correctly I used the time tag along with the "datetime" variable.
+                        Afterwards you can put the date in plain English before the closing time tag.
+                    </p>
+                    <img class="posts" src="/assets/images/date.jpg" alt="screenshot of time tag used for publication dates">
+                    <p>
+                        As this index page is going to contain lots of content, it would be good to have a way of going to the
+                        top of the page without scrolling.
+                        <br />To do this I created an anchor with the ID of 'top', this is not visible to the user as there is
+                        no content between the tags.
+                    </p>
+                    <img class="posts" src="/assets/images/anchor.jpg" alt="screenshot of anchor at top of page">
+                    <p>
+                        This other anchor located in the footer, is linked to the one at the top of the page allowing me to jump
+                        to the top.
+                    </p>
+                    <img class="posts" src="assets/images/anchor2.jpg"
+                        alt="screenshot of anchor at the footer of the page linked to one at the top.">
+                    <footer>
+                        <p>Published on <time datetime="2019-12-01">December 01, 2019</time></p>
+                        <cite>W3.org. (2019). 8.5 Named character references — HTML5. [online]
+                            <br />Available at:<a
+                                href="https://www.w3.org/TR/2011/WD-html5-20110113/named-character-references.html">https://www.w3.org/TR/2011/WD-html5-20110113/named-character-references.html</a>
+                            [Accessed 01 Dec. 2019].
+                        </cite>
+                    </footer>
+                </article>
+            </div>
+            <div class="articles">
+                <article>
+                    <header>
+                        <h3>Getting Started</h3>
+                        <p>
+                            I first started by setting up a 3 page static site, this included ensuring each page responded
+                            dynamically to the window size.
+                        </p>
+                    </header>
+                    <ul>
+                        <li>- Set up site folder</li>
+                        <li>- Create index.html</li>
+                        <li>- Create tutorial.html</li>
+                        <li>- Set viewport scale</li>
+                        <li>- Link files in a nav for navigation</li>
+                    </ul>
+                    <p>
+                        Since I do not have much experience with hosting a website I struggled to structure the directories
+                        correctly.
+                        <br />This meant that my index file wasn't loaded, to fix this I removed the nested folder so index is
+                        now located in the "public_html" directory.
+                    </p>
+                    <img class="posts" src="/assets/images/gettingstarted.jpg" alt="screenshot of file manager on domain">
+                    <p>Below you can see the meta tag to set the viewport value, this means that when the browser loads the site
+                        it will retain the correct scale in relation to the viewport.
+                        This will serve as the 'responsive' design for now.
+                    </p>
+                    <img class="posts" src="assets/images/viewport.jpg"
+                        alt="screenshot of meta tag for viewport including name, content, and initial-scale">
+                    <p>To link the files together I created a nav section within the header which has anchors to the tutorial &
+                        contact page within the same directory. </p>
+                    <img class="posts" src="/assets/images/nav.jpg" alt="screenshot of markup containing navigation ">
+                    <footer>
+                        <p>Published on <time datetime="2019-11-30">November 30, 2019</time></p>
+                    </footer>
+                </article>
+            </div>
+        </div>
+        </main>
+        <footer>
+            <p><a href="#top">Go to top</a></p>
+            <cite>
+                <a href="http://www.w3.org/standards/webdesign/htmlcss">
+                    W3 Schools. “HTML Tutorial.” W3schools.Com, 2018, www.w3schools.com/html/. Accessed 6 Jan. 2020.</a>
+                <br /><a href="https://www.w3schools.com/css/">
+                    W3 Schools. “CSS Tutorial.” W3schools.Com, 2019, www.w3schools.com/css/. Accessed 6 Jan. 2020.</a>
+            </cite>
+            <br />Icon made by <a href="https://www.flaticon.com/authors/prosymbols" title="Prosymbols">Prosymbols
+            </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </footer>
+        </body>
+        
+        </html>

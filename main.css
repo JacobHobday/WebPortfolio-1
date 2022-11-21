@@ -12,7 +12,7 @@ body{
     text-align: center;
     font-size: 500%;
     color: floralwhite;
-    margin: 1em;
+    margin: 1rem;
 
 }
 .blur{
@@ -34,6 +34,9 @@ a{
     transition: all .2s ease-in-out; 
 
 }
+
+
+
 .pAnchor:hover{
     color: grey;
 }
