@@ -1,0 +1,80 @@
+/*Default Layout - Mobile first approach*/ 
+body {
+    max-width: 100%;
+    color: #ffffff;
+    background-color: #242943;
+    text-align: center;
+    font-family: "sans-serif", Serif, Georgia;
+    
+}
+h2 {
+    line-height: 110%;
+}
+
+nav {
+    font-size: 150%;
+    display: block;
+    margin: 0%;
+    padding: 5%;
+    font-family: 'Strait', sans-serif;
+    line-height: 125%;
+}
+nav a {
+    display: block;
+}
+
+
+p {
+    max-width: 100%;
+    font-size: 140%;
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    color: grey;
+}
+footer {
+    padding: 5%;
+}
+
+img.posts {
+    max-width:100%
+    
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1% 2%;
+    max-width: 100%;
+    }
+.articles {
+    max-width: 100%;
+    background-color: #1b1f32;
+    padding: 2%;
+}
+.mediarticle {
+    background-image: url(/WebPortfolio-1-main/assets/images/stripe.png);
+}
+
+@media only screen and (min-width: 768px) {
+    p {
+        font-size: 110%;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5%;
+    }
+    .articles {
+        max-width: 100%;
+        background-color: #1b1f32;
+        padding: 2%;
+    }
+
+}
