@@ -1,45 +1,70 @@
-
-.nav{
-background-color: transparent;
-
+.nav {
+    background-color: transparent;
 }
-html{
+
+html {
     background-image: url("pawel-czerwinski-NTYYL9Eb9y8-unsplash.jpg");
     background-size: cover;
+
+    background-attachment: fixed;       /* Enables parallax */
+    background-position: center;
+    background-repeat: no-repeat;
 }
-body{
+
+body {
     font-family: Tahoma, sans-serif;
     text-align: center;
     font-size: 500%;
     color: floralwhite;
-    margin: 1rem;
-
+    margin: 0rem;
 }
-.blur{
+
+h1 {
+    font-size: 5rem;
+}
+
+
+p {
+    font-size: 55%;
+    margin: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: floralwhite;
+    transition: all .2s ease-in-out;
+}
+
+.blur {
     backdrop-filter: blur(20px);
     border-radius: 4rem;
+    margin: 2rem
 }
-.pdiv{
+
+.pdiv {
     display: flex;
     justify-content: center;
 }
-p{
-    font-size: 55%;
-    margin: 5%;
-   
-}
-a{
-    text-decoration: none;
-    color: floralwhite;
-    transition: all .2s ease-in-out; 
 
-}
-
-
-
-.pAnchor:hover{
+.pAnchor:hover {
     color: grey;
 }
+
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    /* padding: 2rem 0; */
+}
+
+.marquee-track {
+    display: flex;
+    flex-wrap: nowrap;      /* Prevent wrapping */
+    width: max-content;
+    animation: marquee 20s linear infinite;
+    /*gap: 2rem;*/
+}
+
 .gridboxNav{
     display: grid;
     grid-template-columns:repeat(3, 1fr) ;
@@ -48,15 +73,34 @@ a{
     grid-gap: 5%;
 
 }
+
 .grid-itemNav {
-    padding: 10%;
+    flex: 0 0 auto;
+    padding: 2rem;
     font-size: 75%;
     text-align: center;
-    transition: all .2s ease-in-out; 
-  }
-.grid-itemNav:hover{
-    transform: scale(110%);
+    transition: transform .2s ease-in-out;
+    backdrop-filter: blur(20px);
+    border-radius: 4rem;
+    background: rgba(0,0,0,0.2);
 }
 
+.gridboxNavSkills{  
+    grid-template-columns:repeat(6, 1fr) ;  
+}
+
+
+.grid-itemNav:hover {
+    transform: scale(1.1);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 
